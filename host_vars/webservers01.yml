@@ -1,0 +1,15 @@
+# host_vars/webserver01.yml
+
+ansible_host: 192.168.178.100
+ansible_user: foo
+ansible_ssh_private_key_file: ~/.ssh/id_rsa
+
+# Spezifische Variablen für diesen Host
+webserver_port: 80
+webserver_document_root: /var/www/html
+
+# Falls der Host spezielle Umgebungsvariablen benötigt
+environment:
+  APP_ENV: production
+  DB_HOST: 192.168.178.102
+  

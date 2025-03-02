@@ -1,0 +1,21 @@
+---
+# group_vars/all.yml
+# Globale Variablen, die für alle Hosts gelten
+
+ansible_user: bar
+ansible_ssh_private_key_file: ~/.ssh/id_rsa
+
+# Firewall-Einstellungen
+firewall_enabled: true
+firewall_allowed_ports:
+  - 22   # SSH
+  - 80   # HTTP
+  - 443  # HTTPS
+
+# Standardverzeichnisse
+log_directory: /var/log
+backup_directory: /var/backups
+
+# Zeit- und Lokalisierungseinstellungen
+timezone: Europe/Berlin
+locale: de_DE.UTF-8
